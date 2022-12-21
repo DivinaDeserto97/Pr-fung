@@ -23,12 +23,13 @@
     <script src="/js/home.js"></script>
   </head>
   <body class="container">
-    <header class="">
-      <span>Home</span><span>Give Feedbck</span><span>Contact</span
-      ><span>Diabled</span>
+    <header class="row">
+      <span class=" nav col"><a>Home</a></span><span class="col">Give Feedbck</span
+      ><span class="col">Contact</span><span class="col">Diabled</span>
     </header>
-    <section>
-      <div id="smiley" class="bild">
+    <section class="row">
+      <button type="button" class="col btn btn-success" onclick="good()">good!</button>
+      <div id="smiley" class="col bild">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
@@ -45,9 +46,9 @@
           />
         </svg>
       </div>
-      <button type="button" class="btn btn-success">good!</button>
-      <button type="button" class="btn btn-danger">bad!</button>
+      <button type="button" class="col btn btn-danger" onclick="bad()">bad!</button>
+      <div id="ausgabe"></div>
     </section>
-    <footer>footerwith social icons etc</footer>
+    <footer class="row"><span class="col"></span><span class="col">footerwith social icons etc</span></footer>
   </body>
 </html>
